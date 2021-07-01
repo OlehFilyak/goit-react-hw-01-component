@@ -48,6 +48,10 @@ object-fit: contain;
 margin-bottom: 0px;
 }
 
+.title {
+    padding: 10px;
+}
+
 .stats {
     display:flex;
     justify-content: space-around;

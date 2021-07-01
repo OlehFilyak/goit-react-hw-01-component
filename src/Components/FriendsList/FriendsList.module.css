@@ -1,0 +1,48 @@
+p {
+    margin-bottom:0;
+}
+.item {
+    width: 200px;
+    background-color: #fff;
+            border-radius:10px;
+    display:flex;
+    padding: 10px;
+    align-items: center;
+}
+.item:not(last-child) {
+    margin-bottom: 10px;
+}
+
+.item:last-child {
+    margin-bottom: 50px;
+}
+
+.friendList {
+    list-style:none;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-inline-start: 0px;
+}
+
+img {
+    width:50px;
+    height:50px;
+    border-radius:10px;
+}
+.status {
+    display:block;
+    width: 20px;
+    height: 20px;
+
+
+    border-radius: 50%;
+}
+.statusOnline {
+  background-color: green;
+}
+.statusOfline {
+    background-color: red;
+}
+img, .status {
+    margin-right: 5px;
+}

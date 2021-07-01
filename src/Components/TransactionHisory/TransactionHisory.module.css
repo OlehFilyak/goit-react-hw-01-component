@@ -1,0 +1,37 @@
+.transactionHistory {
+border-collapse: collapse;
+}
+.headlines {
+    background-color: aqua;
+}
+
+.theadRows{
+color:white;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.theadRows,
+.tableCell
+{
+    border: 1px solid grey;
+    padding: 10px 40px;
+    margin: 0px;
+    
+}
+
+.tbodyRows {
+    font-size: 12px;
+}
+
+.tbodyRows:nth-child(2n) {
+background-color: #fff;
+}
+
+.tbodyRows:nth-child(2n+1) {
+background-color: lightgray;
+}
+
+.typeTransaction {
+    text-transform: capitalize;
+}
