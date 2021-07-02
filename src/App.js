@@ -27,5 +27,16 @@ function App() {
     </div>
   );
 }
+// TransactionHisory.propTypes = {
+//   id: PropTypes.string.isRequired,
+//   type: PropTypes.string.isRequired,
+//   amount: PropTypes.number.isRequired,
+//   currency: PropTypes.string.isRequired,
+// };
+
+//  id={transactions.id}
+//   type={transactions.type}
+//   amount={transactions.amount}
+//   currency={transactions.currency}
 
 export default App;

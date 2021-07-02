@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import css from "./StatisticSection.module.css";
 import RandomColor from "../../utils/RandomColor";
 function StatisticSection({ statistics }) {
@@ -22,3 +23,13 @@ function StatisticSection({ statistics }) {
 }
 
 export default StatisticSection;
+
+StatisticSection.propTypes = {
+  statistics: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};

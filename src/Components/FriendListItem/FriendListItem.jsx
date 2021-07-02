@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import css from "./FriendListItem.module.css";
 function FriendListItem({ friends }) {
   return friends.map(({ id, isOnline, avatar, name }) => (
@@ -13,3 +14,14 @@ function FriendListItem({ friends }) {
   ));
 }
 export default FriendListItem;
+
+FriendListItem.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

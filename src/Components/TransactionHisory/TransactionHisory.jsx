@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import css from "./TransactionHisory.module.css";
 function TransactionHisory({ transactions }) {
   return (
@@ -28,3 +29,21 @@ function TransactionHisory({ transactions }) {
 }
 
 export default TransactionHisory;
+
+TransactionHisory.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+// TransactionHisory.propTypes = {
+//   id: PropTypes.string.isRequired,
+//   type: PropTypes.string.isRequired,
+//   amount: PropTypes.number.isRequired,
+//   currency: PropTypes.string.isRequired,
+// };
