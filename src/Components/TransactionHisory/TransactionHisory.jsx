@@ -15,9 +15,7 @@ function TransactionHisory({ transactions }) {
           {transactions.map(({ id, type, amount, currency }) => {
             return (
               <tr key={id} className={css.tbodyRows}>
-                <td className={`${css.tableCell} ${css.typeTransaction}`}>
-                  {type}
-                </td>
+                <td className={`${css.tableCell} ${css.tableCell}`}>{type}</td>
                 <td className={css.tableCell}>{amount}</td>
                 <td className={css.tableCell}>{currency}</td>
               </tr>
